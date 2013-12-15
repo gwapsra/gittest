@@ -1,0 +1,89 @@
+<div class="hero-unit" style="padding-bottom: 20px;">
+    <div class="row-fluid" style="text-align: right;">
+        <div style="text-align: left">
+            <div class="alert alert-success" style="text-align: left; display: none; visibility: hidden" id="info-basic"></div>
+            <div class="alert alert-error" style="text-align: left; display: none; visibility: hidden" id="error-basic"></div>
+            <h2>Basic Fields</h2>
+            <table class="table basics table-striped">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Type</th>
+                        <th>Attribute</th>
+                        <th>Value(s)</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="alert alert-success" style="text-align: left; display: none; visibility: hidden" id="info"></div>
+        <div class="alert alert-error" style="text-align: left; display: none; visibility: hidden" id="error"></div>
+        <div style="form-actions">
+            <button style="text-align: right;" class="btn btn-primary" id="clker"><i class="icon-plus"></i> Add Custom Field</button>
+            <hr/>
+        </div>
+        <div style="text-align: left; display: none; visibility: hidden;" id="addHider">
+            <form method="post" id="customFieldForm" role="form">
+                <div class="form-group control-group">
+                    <label class="control-label" for="label">Label</label>
+                    <input type="text" class="form-control" placeholder="Label" name="lableParam" id="lableParam" value="">
+                    <label class="control-label help-inline" for="label"></label>
+                </div>
+                <div class="form-group control-group">
+                    <label class="control-label" for="label">Field Type</label>
+                    <input type="hidden" class="form-control" id="fieldTypeDDownId" name="fieldType" placeholder="Label">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn" id="fieldTypeDDownBtn">panut</button>
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="fieldTypeDDown" role="menu">
+                        </ul>
+                    </div>
+
+                    <label class="control-label help-inline" for="label"></label>
+                </div>
+                <div class="form-group control-group btn-group" style="vertical-align: top">
+                    <label class="control-label" for="label">Value(s)</label>
+                    <input type="text" class="form-control" placeholder="value" style="margin-bottom: 0px;" id="valxx" name="value">
+                    <button type="button" style="text-align: right; display: none; visbility:hidden;" class="btn" id="addbutn"><i class="icon-plus"></i>
+                    </button>
+                    <label class="control-label help-inline" for="label"></label>
+                </div>
+                <div id="addValues">
+                </div>
+                <br />
+                <div class="btn-group" data-toggle="buttons-check" style="display: block;">
+                    <button type="button" name="isRequired" class="btn">Required</button>
+                    <button type="button" name="isPublic" class="btn">Public</button>
+                    <button type="button" name="isEditable" class="btn">Editable</button>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary" id="login">Submit</button>
+            </form>
+            <hr/>
+        </div>
+        <div style="text-align: left">
+            <div class="alert alert-success" style="text-align: left; display: none; visibility: hidden" id="info-cust"></div>
+            <div class="alert alert-error" style="text-align: left; display: none; visibility: hidden" id="err-cust"></div>
+            <h2>Custom Fields</h2>
+            <table class="table customs table-striped">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Type</th>
+                        <th>Attribute</th>
+                        <th>Value(s)</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="template_001" style="display: none; visibility: hidden;">
+    <input name="val" value="" type="text" style="width: 7em">
+    <button class="btn btn-default" style="margin-bottom: 10px;" onclick="$(this).parent().remove()"><i class="icon-minus"></i>
+    </button>
+</div>
