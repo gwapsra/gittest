@@ -12,7 +12,7 @@ app.configure(function () {
 });
 
 /**
-* MODELS
+* MODELS wasaaaap lasa
 * __________________________________________________________________________
 * Model file for each major area of functionality in the site
 **/
