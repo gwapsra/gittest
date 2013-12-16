@@ -21,6 +21,7 @@ directory.LoginView = Backbone.View.extend({
         return false;
     },
 
+//ajsdhkasjdh
     dovalidate: function() {
         if(tz_err(1, "#exampleInputEmail1", !$("#exampleInputEmail1").val(), "Please Provide a User Name")) {
             tz_err(2, "#exampleInputEmail1", $("#exampleInputEmail1").val().length < 6 || $("#exampleInputEmail1").val().length > 10, "User Name must be between 6-10 characters");
