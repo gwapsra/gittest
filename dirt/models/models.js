@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 
+//askdjaksjdh
 var uri = 'mongodb://root:root@ds039487.mongolab.com:39487/ed';
 mongoose.connect(uri, function(err) {
     if (err) {
